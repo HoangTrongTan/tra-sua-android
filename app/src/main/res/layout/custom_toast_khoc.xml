@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/corner_16dp"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="Sai tên đăng nhập rùi !!"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/khocnhe"
+            />
+    </LinearLayout>
+
+</LinearLayout>

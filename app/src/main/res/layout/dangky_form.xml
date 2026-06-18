@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bac4"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="đăng ký tài khoản"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:id="@+id/chupanh"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:src="@drawable/chupanh"
+            android:backgroundTintMode="screen"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            />
+        <ImageButton
+            android:id="@+id/chonanh"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            android:src="@drawable/chonanh"
+            android:backgroundTintMode="screen"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/txt_layout_taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pass"
+        app:startIconDrawable="@drawable/person"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_taikhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/txt_layout_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:startIconDrawable="@drawable/khoa"
+
+        app:endIconMode="password_toggle"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:textColor="#FFF"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/thoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thôi"
+            android:textColor="#FFF"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>
